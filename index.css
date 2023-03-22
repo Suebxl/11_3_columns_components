@@ -13,7 +13,6 @@ h1{
 }
 
 body {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +27,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 300px;
+  min-height: 400px;
+  max-width: 200px;
   padding: 1.5em 2.5em;
   color: hsla(0, 0%, 100%, 0.75);
 }
@@ -106,12 +106,10 @@ section p {
     max-width: 400px;
   }
 
-  section{
-    max-height: 200px;
-  }
+
 
   section p {
-    max-width: 350px;
+    max-width: 250px;
   }
 
   .section-orange {
@@ -121,4 +119,11 @@ section p {
   .section-dark{
     border-radius: 0  0 8px 8px;
   }
+}
+
+@media (min-width:900px) {
+  body {
+    height: 100vh;
+  }
+
 }
